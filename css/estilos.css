@@ -96,6 +96,10 @@ body{
 .categorias .hijo_categorias{
     width: 30%;
     text-align: center;
+    transition: all 250ms;
+}
+.categorias .hijo_categorias:hover{
+    transform: scale(1.1);
 }
 .categorias .hijo_categorias img{
     width: 100%;
@@ -125,6 +129,11 @@ body{
     border: 3px dashed;
     border-color: #e7ba32;
     border-radius: 10px;
+    transition: all 250ms;
+}
+.ofertas .oferta:hover{
+    transform: scale(1.2);
+    border-color:black;
 }
 .ofertas .oferta span{
     font-weight: 600;
