@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    /*background-image: url("../Imagenes/fondo.jpg");*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+#containerGrid{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    min-height: 100vh;
+}
+#header, #footer{
+    background-color: #F2D479;
+    color:white;
+    width: 100%;
+}
+#header{
+    top:0;
+    position: sticky;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    justify-self:center;
+    padding: 15px 0;
+    list-style: none;
+    grid-column-gap:10px;
+    justify-items: start;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.nav li{
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left:5px;
+}
+.nav .boton{
+    background-color: #2c333a; 
+    border: 1px solid #2c333a;
+    border-radius: 5px;
+    justify-self: stretch;
+}
+.nav li a{
+    text-decoration: none;
+    color: #F2D479; 
+}
+.nav li img{
+    width: 100%;
+    max-width: 200px;
+    background-color: #F2D479;
+}
+.contenido{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    justify-self: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    min-height: 80vh;
+}
+.contenido .banner{
+    margin: 20px;
+}
+.contenido .banner img{
+    width: 100%;
+    max-width: 1000px;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+.contenido .subtitulo{
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px;
+    background-color: gray;
+    color: white;
+}
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.categorias .hijo_categorias{
+    width: 30%;
+    text-align: center;
+}
+.categorias .hijo_categorias img{
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    max-height: 200px;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+.categorias .hijo_categorias a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-style: italic;
+    color:#e7ba32;
+}
+.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.ofertas .oferta{
+    width: 40%;
+    text-align: center;
+    border: 3px dashed;
+    border-color: #e7ba32;
+    border-radius: 10px;
+}
+.ofertas .oferta span{
+    font-weight: 600;
+    color: #e7ba32;
+}
+.mapa iframe{
+    width: 100%;
+    margin: 30px 0;
+}
+#footer{
+    text-align: center;
+}
+#footer a{
+    margin: 10px 20px;
+}
+/*Historia*/
+.contenido .imagen_historia{
+    max-width: 40%;
+    text-align: center;
+    align-self: center;
+    border: 3px solid gray;
+    border-radius: 10px;
+    margin:10px 0;
+}
+/*Productos*/
+.categoria_productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.categoria_productos .categoria_elemento img{
+    height: 200px;
+    width: 200px;
+}
+
+@media all and (max-width:576px){
+    #header{
+        font-size: 0.5rem;
+        position: relative;
+    }
+    .nav{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 0;
+    }
+    .nav .logo{
+        grid-column: 1 /6;
+        grid-row:1;
+        justify-self: center;
+        max-width: 100px;
+    }
+    .contenido .banner{
+        margin:5px;
+    }
+    .contenido .subtitulo{
+        font-size: 0.8rem;
+    }
+    .categorias{
+        margin: 5px 0;
+    }
+    .categorias .hijo_categorias{
+        width: 40%;
+    }
+    .categorias .hijo_categorias img{
+        width: 100%;
+        max-width: 100px;
+        height: 100%;
+        max-height: 100px;
+    }
+    .categorias .hijo_categorias a{
+        font-weight: 400;
+        font-size: 0.7rem;
+    }
+    .ofertas{
+        margin:5px;
+    }
+    .ofertas .oferta{
+        font-size: 0.5rem;
+    }
+    .mapa iframe{
+        width: 100%;
+        margin: 0px 0px;
+    }
+    #footer{
+        font-size: 0.5rem;
+    }
+    .contenido{
+        font-size: 0.5rem;
+        max-width: 400px;
+    }
+    .categoria_productos .categoria_elemento img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div id="containerGrid">
+		<div id="header">
+			<ul class="nav">
+				<li class="logo"><a href="index.html"><img src="assets/logo.png" alt="Logo"></a></li>
+				<li class="boton"><a href="index.html">Inicio</a></li>
+				<li class="boton"><a href="historia.html">Nosotros</a></li>
+				<li class="boton"><a href="productos.html">Productos</a></li>
+				<li class="boton"><a href="pedidos.html">Pedidos</a></li>
+				<li class="boton"><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+		<div class="contenido">
+			<h2>Formulario de Contacto</h2>
+			<p class="encabezado">Ingresa tus datos y lo que deseas cotizar</p>
+			<form action="contacto.html" method="POST" enctype="multipart/form-data" id="formulario">
+				<p class="pregunta">
+					<label for="nombre">Nombre:</label>
+					<input type="text" name="nombre">
+				</p>
+				<p class="pregunta">
+					<label for="email">Correo:</label>
+					<input type="text" name="email">
+				</p>
+				<p class="pregunta">
+					<label for="telefono">Teléfono:</label>
+					<input type="text" name="telefono">
+				</p>
+				<p class="pregunta">
+					<label for="productos">Selecciona la categoría del producto que te interesa:</label>
+					<select name="productos">
+						<option value="rep">Repisas</option>
+						<option value="mes">Muebles de Habitación</option>
+						<option value="clo">Muebles de Cocina</option>
+						<option value="coc">Muebles de Terraza</option>
+						<option value="ter">Muebles Menores</option>
+						<option value="otr">Otro</option>
+					</select>
+				</p>
+				<p class="pregunta">
+					<label for="despacho">Seleccione su tipo de desapacho:</label>
+					<label for="desp">Despacho a Domicilio</label>	
+					<input type="radio" name="despacho" id="desp">
+					<label for="ret">Retiro en Tienda</label>
+					<input type="radio" name="despacho" id="ret">
+				</p>
+				<p class="pregunta">
+					<label for="comuna">Selecciona tu comuna:</label>
+					<select name="comuna">
+						<option value="rep">Chimbarongo</option>
+						<option value="mes">San Fernando</option>
+						<option value="clo">Nancagua</option>
+						<option value="coc">Otra (mencionar en detalle)</option>
+					</select>
+				</p>
+				<p class="pregunta">
+					<label for="detalle">Detalle de tu pedido:</label>
+					<textarea name="detalle"></textarea>
+				</p>
+				<p class="pregunta">
+					<label for="codigo">Cupón de Descuento</label>
+					<textarea name="codigo"></textarea>
+				</p>
+				
+				<input class="pregunta" type="submit" name="Enviar" value="Enviar">
+			</form>
+		</div>
+		<div id="footer">		
+			<p>¡Síguenos en nuestras redes sociales!</p>
+			<a href="https://www.facebook.com/maderart.chimbarongo" target="_blank"><img src="assets/facebook.png" alt="LogoFacebook" width="20" height="20"></a>
+			<a href="https://www.instagram.com/maderart_chimbarongo/" target="_blank"><img src="assets/instagram.png" alt="LogoInstagram" width="20" height="20"></a>
+		</div>
+	</div>
+</body>
+</html>
